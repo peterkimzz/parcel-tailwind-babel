@@ -1,0 +1,20 @@
+{
+  "name": "parcel",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "dev": "parcel serve src/views/index.html --log-level verbose",
+    "build": "rimraf dist && parcel build ./src/views/index.html --no-minify --target browser"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.12.11",
+    "autoprefixer": "^10.2.1",
+    "parcel": "^2.0.0-nightly.539",
+    "postcss": "^8.2.4",
+    "rimraf": "^3.0.2",
+    "tailwindcss": "1.9.6"
+  },
+  "dependencies": {
+    "lodash": "^4.17.20"
+  }
+}
